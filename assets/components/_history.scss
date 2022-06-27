@@ -1,0 +1,112 @@
+.history{
+    &__content{
+        @include flex(center, space-between, wrap);
+    }
+    &__title{
+        padding: 100px 0 40px 0;
+        @include font( 700, 32px, $text-black);
+        @include flex(center, center, wrap);
+    }
+    &__description{
+        padding: 25px 0;
+        @include font( 400, 22px, $text-black);
+        width: 600px;
+    }
+    &__img{
+        max-width: 450px;
+        padding: 20px 5px;
+        @include flex(center, center, wrap);
+    }
+}
+
+@media screen and(max-width:1110px) {
+    .history{
+        &__title{
+            padding: 100px 0 40px 0;
+            @include font( 700, 30px, $text-black);
+            @include flex(center, center, wrap);
+        }
+        &__description{
+            padding: 25px 0;
+            @include font( 400, 20px, $text-black);
+            width: 570px;
+        }
+        &__img{
+            max-width: 400px;
+            padding: 15px 0px;
+            @include flex(center, center, wrap);
+        }
+    }
+}
+
+@media screen and(max-width:1117px) {
+    .history{
+        
+        &__description{
+            width: 520px;
+        }
+        &__img{
+            max-width: 350px;
+            padding: 15px 0px;
+            @include flex(center, center, wrap);
+        }
+    }
+}
+@media screen and(max-width:910px) {
+    .history{
+        
+        &__description{
+            width: 450px;
+        }
+        &__img{
+            max-width: 300px;
+        }
+    }
+}
+@media screen and(max-width:790px) {
+    .history{
+        
+        &__description{
+            width: 400px;
+        }
+        &__img{
+            max-width: 280px;
+        }
+    }
+}
+@media screen and(max-width:723px) {
+    .history{
+        
+        &__description{
+            width: 100%;
+        }
+        &__img{
+            width: 250px;
+            height: 170px;
+            
+        }
+        &__right{
+            @include flex(center, space-around, wrap);
+        }
+    }
+}
+@media screen and(max-width:555px) {
+    .history{
+        &__img{
+            width: 200px;
+            height: 150px;
+            
+        }
+        
+    }
+}
+@media screen and(max-width:466px) {
+    .history{
+        &__img{
+           width: 350px;
+            height: 250px;
+            
+        }
+        
+    }
+}

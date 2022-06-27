@@ -1,0 +1,62 @@
+.job{
+    background: #99aecf;
+    &__title{
+        padding-top: 100px;
+        @include font( 700, 32px, $text-black);
+        @include flex(center, center, wrap);
+    }
+    &__date{
+        padding-top: 25px;
+        @include font( 400, 18px, $text-black);
+    }
+    &__link{
+        border: 1px solid #537fed;
+        background: #537fed;
+        @include font( 500, 22px, $text-write);
+    }
+    &__suptitle{
+        padding-top: 25px;
+        @include font( 600, 24px, $text-black);
+    }
+    &__responsibility{
+        padding-top: 35px;
+        @include font( 600, 28px, $text-black);
+    }
+    &__row{
+        @include flex(center, space-between, wrap);
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+    }
+    &__list{
+        padding-top: 15px;
+        @include font( 400, 22px, $text-black);
+    }
+    &__item{
+        padding-top: 10px;
+    }
+    &__list--left{
+        width:600px;
+    }
+    &__img{
+        max-width: 450px;
+        padding: 25px 5px;
+        @include flex(center, center, wrap);
+    }
+    &__text{
+        padding-top: 25px;
+        @include font( 400, 22px, $text-black);
+    }
+}
+@media screen and(max-width:1108px){
+    .job{
+        &__list--left{
+            width:100%;
+        }
+        &__img{
+            max-width: 350px;
+           
+        }
+    }
+}

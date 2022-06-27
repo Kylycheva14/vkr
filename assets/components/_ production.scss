@@ -1,0 +1,50 @@
+.production{
+    &__title{
+        padding-top: 70px;
+        @include font( 700, 32px, $text-black);
+        @include flex(center, center, wrap);
+    }
+    &__description{
+        padding-top: 15px;
+        @include font( 400, 22px, $text-black);
+    }
+    &__img{
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 25px 5px;
+        @include flex(center, center, wrap);
+    }
+    &__suptitle{
+        padding-top: 40px;
+        @include font( 600, 26px, $text-black);
+        @include flex(center, center, wrap);
+        
+    }
+}
+
+@media screen and(max-width:637px){
+    .production{
+        &__img{
+            max-width: 400px;
+          
+        }
+    }
+}
+
+@media screen and(max-width:447px){
+    .production{
+        &__img{
+            width: 280px;
+            padding: 25px 0px;
+        }
+        &__title{
+            @include font( 700, 23px, $text-black);
+        }
+        &__description{
+            @include font( 400, 18px, $text-black);
+        }
+        &__suptitle{
+            @include font( 600, 20px, $text-black);
+        }
+    }
+}

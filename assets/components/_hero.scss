@@ -1,0 +1,21 @@
+.hero{
+    background: linear-gradient(92.18deg, #99aecf 20.13%,#37d5d6 81.93%);
+    background-position: center;
+
+   
+    &__title{
+        padding-top: 70px;
+        @include font( 700, 35px, #000); 
+        @include flex(center, center, wrap);
+    }
+    &__suptitle{
+        padding: 50px 0;
+        @include font( 500, 28px, #000);
+        @include flex(center, center, wrap);
+        max-width: 700px;
+        margin: 0 auto;
+     
+    }
+  
+}
+

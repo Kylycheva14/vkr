@@ -1,0 +1,88 @@
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.images{
+    &__img{
+        max-width: 800px;
+        height: 500px;
+        padding: 25px 5px;
+        display: block;
+        margin: 0 auto;
+
+    }
+}
+
+@media screen and(max-width:875px) {
+    .images{
+        &__img{
+            max-width: 700px;
+            height: 450px;
+            
+    
+        }
+    }
+
+
+}
+@media screen and(max-width:787px) {
+    .images{
+        &__img{
+            max-width: 600px;
+            height: 420px;
+        }
+    }
+}
+@media screen and(max-width:718px) {
+    .images{
+        &__img{
+            max-width: 550px;
+            height: 400px;
+        }
+    }
+}
+@media screen and(max-width:666px) {
+    .images{
+        &__img{
+            max-width: 470px;
+            height: 350px;
+        }
+    }
+}
+@media screen and(max-width:593px) {
+    .images{
+        &__img{
+            max-width: 400px;
+            height: 250px;
+        }
+    }
+}
+@media screen and(max-width:486px) {
+    .images{
+        &__img{
+            width: 300px;
+            height: 150px;
+        }
+    }
+}
+@media screen and(max-width:427px) {
+    .images{
+        &__img{
+            width: 230px;
+            height: 120px;
+        }
+    }
+}
+@media screen and(max-width:347px) {
+    .images{
+        &__img{
+            width: 200px;
+            height: 100px;
+        }
+    }
+}
+.name, .work, .man{
+    width: 400px;
+    height: 100px;
+}

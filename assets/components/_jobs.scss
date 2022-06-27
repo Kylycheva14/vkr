@@ -1,0 +1,109 @@
+.jobs{
+    &__title{
+        @include flex(center, center, wrap);
+        @include font( 700, 28px, $text-black);
+        width: 100%;
+        padding: 50px 5px;
+    }
+    &__content{
+        @include flex(center, space-between, wrap);
+        margin:30px 0;
+    }
+    &__img{
+        padding: 10px 0;
+        max-width: 400px;
+    }
+    &__link{
+        display: block;
+        padding: 10px;
+        @include font( 400, 18px, $text-black);
+    }
+}
+
+@media screen and(max-width:1088px){
+    .jobs{
+        &__link{
+            @include font( 400, 16px, $text-black);
+        }
+        &__img{
+            max-width: 350px;
+        }
+    }
+}
+@media screen and(max-width:965px){
+    .jobs{
+        &__link{
+            @include font( 400, 14px, $text-black);
+        }
+        &__img{
+            width: 320px;
+        }
+    }
+}
+@media screen and(max-width:861px){
+    .jobs{
+        &__link{
+            @include font( 400, 12px, $text-black);
+        }
+        &__img{
+            width: 290px;
+        }
+    }
+}
+@media screen and(max-width:762px){
+    .jobs{
+        &__link{
+            @include font( 400, 12px, $text-black);
+        }
+        &__img{
+            width: 250px;
+        }
+    }
+}
+@media screen and(max-width:725px){
+    .jobs{
+        &__link{
+            @include font( 400, 18px, $text-black);
+        }
+        &__img{
+            width: 550px;
+           
+        }
+        &__right{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and(max-width:547px){
+    .jobs{
+        &__link{
+            @include font( 400, 14px, $text-black);
+        }
+    }
+}
+@media screen and(max-width:451px){
+    .jobs{
+        &__link{
+            @include font( 400, 12px, $text-black);
+        }
+    }
+}
+@media screen and(max-width:387px){
+    .jobs{
+        &__link{
+            @include font( 400, 12px, $text-black);
+           margin: 15px 0;
+        }
+        &__title{
+            @include font( 700, 22px, $text-black);
+            padding: 30px 5px;
+        }
+        &__img{
+            padding: 0;
+            width: 280px;
+           
+        }
+    }
+}

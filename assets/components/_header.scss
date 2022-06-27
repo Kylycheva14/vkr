@@ -1,0 +1,134 @@
+.header{
+    background:#4e6da6 ;
+    width: 100%;
+    height: 100px;
+    &__list{
+        @include flex(center, space-between, nowrap);
+       
+    }
+    &__content{
+        @include flex(center, space-between, nowrap);
+    }
+    &__link{
+        margin: 0 10px;
+        @include font( 400, 16px, $text-write);
+        font-family: roboto;
+
+    }
+    &__link:hover{
+        border-bottom: 2px solid #E2B024;
+    }
+    &__img{
+        height: 90px;
+        max-width: 100%;
+    }
+    &__link--logo{
+        cursor: pointer;
+    }
+
+    
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+
+    &__list {
+        display: none;
+        padding-top: 100px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(92.18deg, #37d5d6 20.13%,#36096d 92.93%);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    &__menu {
+       width: 40px;
+       height: 40px;
+       @include flex(center, space-between, wrap);
+
+    }
+
+    &__line {
+        background: #fff;
+        width: 35px;
+        margin: 0 auto;
+        height: 4px;
+        
+    }
+
+
+    &__close {
+        display: none;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        line-height: 0.5;
+        z-index: 2;
+
+    }
+   
+    &__menu.active &__close {
+        display: flex;
+    }
+
+    &__menu.active &__line {
+        display: none;
+    }
+
+    &__menu.active~&__list {
+        display: block;
+    }
+
+    .header__item {
+        margin-top: 15px;
+        text-align: center;
+
+    }
+}
+
+@media screen and(max-width:1016px) {
+    .header { 
+        &__link{
+            margin: 0 5px;
+            @include font( 400, 14px, $text-write);
+        }
+    }
+}
+@media screen and(max-width:864px) {
+    .header { 
+        &__link{
+            margin: 0 5px;
+            @include font( 400, 12px, $text-write);
+        }
+        &__img{
+            height: 80px;
+        }
+    }
+}
+@media screen and(max-width:760px) {
+    .header { 
+        height: 70px;
+        &__link{
+            margin: 0 5px;
+            @include font( 400, 10px, $text-write);
+        }
+        &__img{
+            height: 65px;
+        }
+    }
+}
+@media screen and(max-width:648px) {
+    .header { 
+        &__list{
+            display: none;
+        }
+    }
+    .burger {
+        display: block;
+    }
+}

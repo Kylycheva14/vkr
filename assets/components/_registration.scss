@@ -1,0 +1,64 @@
+.registration{   
+    &__content{
+        @include flex(center, space-around, wrap);
+        padding-top: 70px;
+    }
+    &__img{
+        width: 450px;
+    }
+    &__form--title{
+        margin-top: 10px;
+    }
+    &__form{
+        margin-top: 10px;
+        width: 270px;
+        height: 40px;
+        border-radius: 20%;
+    }
+    &__btn{
+        width: 170px;
+        height: 40px;
+        border-radius: 10%;
+        display: block;
+        margin: 0 auto;
+    }
+    &__form--btn{
+        margin-top: 50px;
+    }
+}
+@media screen and(max-width:797px){
+    .registration{
+        &__img{
+            width: 350px;
+        }
+    }
+}
+@media screen and(max-width:680px){
+    .registration{
+        &__img{
+            margin-top: 20px;
+            width: 300px;
+        }
+    }
+}
+@media screen and(max-width:637px){
+    .registration{
+        &__img{
+           width:450px;
+        }
+    }
+}
+@media screen and(max-width:473px){
+    .registration{
+        &__img{
+           width:350px;
+        }
+    }
+}
+@media screen and(max-width:372px){
+    .registration{
+        &__img{
+           width: 300px;
+        }
+    }
+}
